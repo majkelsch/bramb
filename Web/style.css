@@ -8,6 +8,7 @@ body {
 
 * {
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .container {
@@ -16,7 +17,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 80%;
-    }
+}
 
 .container-fluid {
     width: 100%;
@@ -26,61 +27,119 @@ body {
     padding: 30px;
 }
 
-.col-xs-1, .col-sm-1, .col-1, .col-lg-1,
-.col-xs-2, .col-sm-2, .col-2, .col-lg-2,
-.col-xs-3, .col-sm-3, .col-3, .col-lg-3,
-.col-xs-4, .col-sm-4, .col-4, .col-lg-4,
-.col-xs-5, .col-sm-5, .col-5, .col-lg-5,
-.col-xs-6, .col-sm-6, .col-6, .col-lg-6,
-.col-xs-7, .col-sm-7, .col-7, .col-lg-7,
-.col-xs-8, .col-sm-8, .col-8, .col-lg-8,
-.col-xs-9, .col-sm-9, .col-9, .col-lg-9,
-.col-xs-10, .col-sm-10, .col-10, .col-lg-10,
-.col-xs-11, .col-sm-11, .col-11, .col-lg-11,
-.col-xs-12, .col-sm-12, .col-12, .col-lg-12 {
+.col-xs-1,
+.col-sm-1,
+.col-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-12,
+.col-lg-12 {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
 }
-    
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
     float: left;
 }
-    
+
 .col-1 {
     width: 8.33333333%;
 }
+
 .col-2 {
     width: 16.66666667%;
 }
+
 .col-3 {
     width: 25%;
 }
+
 .col-4 {
     width: 33.33333333%;
 }
+
 .col-5 {
     width: 41.66666667%;
 }
+
 .col-6 {
     width: 50%;
 }
+
 .col-7 {
     width: 58.33333333%;
 }
+
 .col-8 {
     width: 66.66666667%;
 }
+
 .col-9 {
     width: 75%;
 }
+
 .col-10 {
     width: 83.33333333%;
 }
+
 .col-11 {
     width: 91.66666667%;
 }
+
 .col-12 {
     width: 100%;
 }
@@ -97,13 +156,14 @@ header {
     color: #000;
     border-bottom: 1px solid #d50000;
 }
-header>h1{
+
+header>h1 {
     padding-top: 36px;
     padding-left: 50px;
     color: #000;
 }
 
-header>h1 a:hover{
+header>h1 a:hover {
     color: #000;
 }
 
@@ -125,13 +185,13 @@ a {
     position: relative;
     color: #000;
     text-decoration: none;
-  }
-  
-  .animated a:hover {
+}
+
+.animated a:hover {
     color: #d50000;
-  }
-  
-  .animated a::before {
+}
+
+.animated a::before {
     content: "";
     position: absolute;
     display: block;
@@ -142,31 +202,15 @@ a {
     background-color: #d50000;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-  }
-  
-  .animated a:hover::before {
+}
+
+.animated a:hover::before {
     transform: scaleX(1);
-  }
+}
+
 .main-page {
-    background-image: url(https://i.pinimg.com/originals/d4/61/97/d461971b20e4e30ef03034778263e60e.jpg);
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container-fluid.main-page {
-    height: 100vh;
-}
-
-.left-block {
-    width: 60vw;
-    height: 100vh;
-    background-color: #fff;
-    border-radius: 0 10vh 10vh 0 / 5vw;
+    /*background-image: url(https://i.pinimg.com/originals/d4/61/97/d461971b20e4e30ef03034778263e60e.jpg);*/
+    background-image: linear-gradient(to left, red, orange);
 }
 
 p {
@@ -248,7 +292,7 @@ button.primary:hover {
     overflow-x: hidden;
     transition: 0.4s;
 }
- 
+
 .menu-content {
     position: relative;
     top: 25%;
@@ -256,17 +300,18 @@ button.primary:hover {
     text-align: center;
     margin-top: 30px;
 }
- 
+
 .menu-content a {
-   padding: 8px;
-   text-decoration: none;
-   font-size: 30px;
-   color: #000;
-   display: block;
-   transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
 }
- 
-a:hover, a:focus {
+
+a:hover,
+a:focus {
     color: #333;
     transform: scale(1.1);
 }
@@ -279,10 +324,10 @@ a:hover, a:focus {
 }
 
 .closebtn {
- position: absolute;
- top: 20px;
- right: 45px;
- font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 .overlay-menu .openbtn {
@@ -293,14 +338,20 @@ a:hover, a:focus {
 }
 
 .openbtn {
- position: absolute;
- top: 60px;
- right: 45px;
- font-size: 24px;
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    font-size: 24px;
 }
 
 span {
     color: #000;
     font-size: 30px;
     cursor: pointer;
+}
+
+.main-page .container.background {
+    background-color: #f5f5f5cc;
+    border-radius: 10px;
+    margin: 50px auto 50px auto;
 }

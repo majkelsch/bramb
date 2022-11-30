@@ -1,55 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="javascript" type="text" href="app.js">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chipsy</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="javascript" type="text" href="app.js" />
+    <script src="app.js"></script>
 </head>
+
 <body>
     <header>
         <h1><a href="#">CHIP</a></h1>
         <div id="myMenu" class="menu-overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
             <div class="menu-content">
-              <h1>bramb</h1>
-              <br>
-              <br>
-              <br>
-              <a href="#">DOMŮ</a>
-              <a href="#">O ČIPSECH</a>
-              <a href="#">O NÁS</a>
-            </div>
-          </div>
-          <span class="openbtn" onclick="openMenu()">Menu&#9776;</span>
-
-          <script>
-            /* Open when someone clicks on the span element */
-            function openMenu() {
-              document.getElementById("myMenu").style.width = "100%";
-            }
-        
-            /* Close when someone clicks on the "x" symbol inside the overlay */
-            function closeMenu() {
-              document.getElementById("myMenu").style.width = "0%";
-            }
-        </script>
-    </header>
-    <div class="main-page">
-        <div class="highlight">
-            <div class="container">
-                <div class="row">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat accusantium harum repudiandae unde quia accusamus sint libero recusandae. Corporis consequuntur veritatis cupiditate laudantium nisi odit voluptates consequatur necessitatibus soluta.
-                </div>
+                <h1>bramb</h1>
+                <br />
+                <br />
+                <br />
+                <a href="#">DOMŮ</a>
+                <a href="#">O ČIPSECH</a>
+                <a href="#">O NÁS</a>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi non tenetur. Esse accusantium quia temporibus ex repudiandae ipsam aspernatur eaque optio perferendis corrupti corporis sunt ea, tempore ad quis?</p>
+        <span class="openbtn" onclick="openMenu()">Menu&#9776;</span>
+    </header>
+
+    <div class="main-page">
+        <div class="container background">
+            <div class="row">
+                <h1>Náš tip dne</h1>
+                <br>
+                <h2>Lay's Fromage</h2>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
