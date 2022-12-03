@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif!important;
     background-color: #fff;
+    font-size: 16px;
 }
 
 * {
@@ -25,6 +26,18 @@ body {
 
 .row {
     padding: 30px;
+}
+
+p {
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
 }
 
 .col-xs-1,
@@ -157,13 +170,26 @@ header {
     border-bottom: 1px solid #d50000;
 }
 
-header>h1 {
-    padding-top: 36px;
-    padding-left: 50px;
+header .logo {
+    width: 50%;
+    display: block;
+    float: left;
+    line-height: 5em;
+}
+
+header .nav-menu-btn {
+    width: 50%;
+    font-size: 2em;
+    text-align: right;
+    display: block;
+    line-height: 4em;
+}
+
+header h1 {
     color: #000;
 }
 
-header>h1 a:hover {
+header h1 a:hover {
     color: #000;
 }
 
@@ -209,67 +235,8 @@ a {
 }
 
 .main-page {
-    /*background-image: url(https://i.pinimg.com/originals/d4/61/97/d461971b20e4e30ef03034778263e60e.jpg);*/
-    background-image: linear-gradient(to left, red, orange);
-}
-
-p {
-    text-align: justify;
-}
-
-button.primary {
-    background-color: #d50000;
-    color: #fff;
-    padding: 20px 40px 20px 40px;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    border: 0;
-    transition: 0.3s;
-}
-
-button.primary:hover {
-    background-color: #F5F5F5;
-    color: #d50000;
-}
-
-@media screen and (max-width: 600px) {
-    .col-1 {
-        width: 8.33333333%;
-    }
-    .col-2 {
-        width: 16.66666667%;
-    }
-    .col-3 {
-        width: 25%;
-    }
-    .col-4 {
-        width: 33.33333333%;
-    }
-    .col-5 {
-        width: 41.66666667%;
-    }
-    .col-6 {
-        width: 50%;
-    }
-    .col-7 {
-        width: 58.33333333%;
-    }
-    .col-8 {
-        width: 66.66666667%;
-    }
-    .col-9 {
-        width: 75%;
-    }
-    .col-10 {
-        width: 83.33333333%;
-    }
-    .col-11 {
-        width: 91.66666667%;
-    }
-    .col-12 {
-        width: 100%;
-    }
+    background-image: url(https://i.pinimg.com/originals/d4/61/97/d461971b20e4e30ef03034778263e60e.jpg);
+    /*background-image: linear-gradient(to left, red, orange);*/
 }
 
 .highlight {
@@ -287,8 +254,8 @@ button.primary:hover {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     overflow-x: hidden;
     transition: 0.4s;
 }
@@ -338,10 +305,7 @@ a:focus {
 }
 
 .openbtn {
-    position: absolute;
-    top: 60px;
-    right: 45px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 span {
@@ -354,4 +318,78 @@ span {
     background-color: #f5f5f5cc;
     border-radius: 10px;
     margin: 50px auto 50px auto;
+}
+
+.main-page .mp-description,
+.mp-illustration,
+h2 {
+    text-align: center;
+}
+
+.mp-illustration img {
+    max-width: 60%;
+    display: block;
+    margin: 40px auto;
+}
+
+table.mp-rating tbody tr td {
+    text-align: left;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+table.mp-rating tbody tr td.stars {
+    color: #029bdd;
+    font-size: 20px;
+}
+
+table.mp-rating {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.primary {
+    background-color: #e20613;
+    color: #fff;
+    padding: .6rem 2rem;
+    display: block;
+    margin: 50px auto 0 auto;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+}
+
+button.primary:hover {
+    background-color: #F5F5F5;
+    color: #e20613;
+}
+
+@media only screen and (min-width: 700px) {
+    .main-page h2 {
+        text-align: left;
+    }
+    .main-page .mp-description,
+    .mp-illustration {
+        text-align: left;
+        width: 50%;
+        float: left;
+    }
+    .mp-illustration img {
+        max-width: 60%;
+        display: block;
+        margin: auto;
+    }
+    table.mp-rating {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    table.mp-rating tbody tr td {
+        padding-right: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
 }

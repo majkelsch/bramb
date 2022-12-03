@@ -9,32 +9,74 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="javascript" type="text" href="app.js" />
     <script src="app.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Raleway");
+    </style>
 </head>
 
 <body>
     <header>
-        <h1><a href="#">CHIP</a></h1>
-        <div id="myMenu" class="menu-overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-            <div class="menu-content">
-                <h1>bramb</h1>
-                <br />
-                <br />
-                <br />
-                <a href="#">DOMŮ</a>
-                <a href="#">O ČIPSECH</a>
-                <a href="#">O NÁS</a>
+        <div class="container">
+            <div class="nav-menu">
+                <div class="logo">
+                    <h1><a href="#">CHIPSY</a></h1>
+                </div>
+                <div class="nav-menu-btn">
+                    <span class="openbtn" onclick="openMenu()">Menu&#9776;</span>
+                </div>
+            </div>
+
+
+            <div id="myMenu" class="menu-overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                <div class="menu-content">
+                    <h1>Menu</h1>
+                    <p style="width: 50%; margin: auto;">Věděli jste, že brambůrky měli být původně pomsta kuchaře zákazníkovi, který si stěžoval, že brambory nebyly dostatečně propečené?</p>
+                    <br />
+                    <br />
+                    <br />
+                    <a href="#">DOMŮ</a>
+                    <a href="#">O ČIPSECH</a>
+                    <a href="#">O NÁS</a>
+                </div>
             </div>
         </div>
-        <span class="openbtn" onclick="openMenu()">Menu&#9776;</span>
     </header>
 
     <div class="main-page">
         <div class="container background">
             <div class="row">
-                <h1>Náš tip dne</h1>
-                <br>
-                <h2>Lay's Fromage</h2>
+                <h2>Náš tip dne</h2>
+                <div>
+                    <div class="mp-description">
+                        <h3>Lay's Fromage</h3>
+                        <p>Smažené bramborové lupínky s příchutí smetanového sýra a bylin</p>
+                        <br />
+                        <h4>Hodnocení redakce</h4>
+                        <table class="mp-rating">
+                            <tbody>
+                                <tr>
+                                    <td>Chuť</td>
+                                    <td class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                                </tr>
+                                <tr>
+                                    <td>Plnost balení</td>
+                                    <td class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                                </tr>
+                                <tr>
+                                    <td>Cena</td>
+                                    <td class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mp-illustration">
+                        <img src="https://laysky-cz.wspprod.com/images/pages/products/core/highquality/fromage.png" />
+                    </div>
+                </div>
+                <a href="#">
+                    <button class="primary">Chci věděť více</button>
+                </a>
             </div>
         </div>
     </div>
