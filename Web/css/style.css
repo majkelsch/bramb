@@ -9,7 +9,7 @@ body {
 
 * {
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
@@ -123,7 +123,7 @@ header ul li {
 
 header {
     background-color: #fff;
-    height: 120px;
+    height: 95px;
     color: #000;
     border-bottom: 1px solid #d50000;
 }
@@ -132,15 +132,13 @@ header .logo {
     width: 50%;
     display: block;
     float: left;
-    line-height: 5em;
+    line-height: 50px;
 }
 
-header .nav-menu-btn {
-    width: 50%;
-    font-size: 2em;
+header .nav-menu-btn h2.openbtn {
     text-align: right;
     display: block;
-    line-height: 4em;
+    line-height: 50px;
 }
 
 header h1 {
@@ -193,7 +191,9 @@ a {
 }
 
 .main-page {
-    background-image: url(https://i.pinimg.com/originals/d4/61/97/d461971b20e4e30ef03034778263e60e.jpg);
+    background-image: url(../media/DALL·E\ 2022-12-04\ 14.07.16.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     /*background-image: linear-gradient(to left, red, orange);*/
 }
 
@@ -262,9 +262,8 @@ a:focus {
     font-size: 24px;
 }
 
-.openbtn {
-    font-size: 32px;
-}
+
+/*.openbtn {}*/
 
 span {
     color: #000;
@@ -291,7 +290,7 @@ span {
 }
 
 .main-page h2 {
-    text-align: left;
+    text-align: center;
 }
 
 .main-page .mp-description,
@@ -340,6 +339,12 @@ button.primary {
 button.primary:hover {
     background-color: #F5F5F5;
     color: #e20613;
+}
+
+@media only screen and (max-width: 360px) {
+    .row {
+        padding: 15px;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -391,6 +396,9 @@ button.primary:hover {
         font-weight: 300;
         text-align: left;
     }
+    .main-page h2 {
+        text-align: left;
+    }
     .main-page .mp-description,
     .mp-illustration {
         text-align: left;
@@ -411,13 +419,17 @@ button.primary:hover {
         text-transform: uppercase;
         font-weight: 300;
     }
+    .menu-content h1,
+    p {
+        text-align: center;
+    }
 }
 
 
 /* PRODUCT PAGES */
 
 .col-6 img {
-    width: 90%;
+    width: 60%;
     display: block;
     margin: auto;
 }
