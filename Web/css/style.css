@@ -115,52 +115,42 @@ h5 {
     width: 100%;
 }
 
-header ul li {
-    display: inline;
-    padding: 1rem;
-    float: right;
-}
-
 header {
+    overflow: hidden;
+    position: relative;
     background-color: #fff;
-    height: 95px;
     color: #000;
     border-bottom: 1px solid #d50000;
 }
 
+header * {
+    overflow: hidden;
+}
+
+header .nav-menu {
+    margin: 0 auto 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+}
+
 header .logo {
-    width: 50%;
     display: block;
     float: left;
-    line-height: 50px;
 }
 
-header .nav-menu-btn h2.openbtn {
-    text-align: right;
+header .nav-menu-btn {
     display: block;
-    line-height: 50px;
+    float: right;
 }
 
-header h1 {
+header .nav-menu-btn h2 span.openbtn {
     color: #000;
+    transition: .3s;
 }
 
-header h1 a:hover {
-    color: #000;
-}
-
-.header-img {
-    background-color: #d50000;
-    font-size: 36px;
-    border-radius: 60px 10px 60px 10px;
-    padding: 20px;
-    margin: 2rem;
-    text-align: center;
-}
-
-header ul {
-    color: #000;
-    padding-top: 1.6rem;
+header .nav-menu-btn h2 span.openbtn:hover {
+    color: #e20613;
 }
 
 a {
@@ -219,6 +209,7 @@ a {
 }
 
 .menu-content {
+    overflow: hidden;
     position: relative;
     top: 25%;
     width: 100%;
@@ -420,7 +411,7 @@ button.primary:hover {
         font-weight: 300;
     }
     .menu-content h1,
-    p {
+    .menu-content p {
         text-align: center;
     }
 }
@@ -436,7 +427,6 @@ button.primary:hover {
 
 table.composition {
     width: 80%;
-    display: block;
     margin: 50px auto 50px auto;
     border-spacing: 0;
     border-collapse: collapse;
@@ -444,7 +434,7 @@ table.composition {
 }
 
 table.composition tbody tr th,
-td {
+table.composition tbody tr td {
     width: 20%;
     padding: 14px 20px 14px 20px;
     margin: 0;
