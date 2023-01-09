@@ -45,6 +45,12 @@ h5 {
     text-align: center;
 }
 
+hr {
+    background-color: #d50000;
+    border: none;
+    height: 1px;
+}
+
 .col-xs-1,
 .col-sm-1,
 .col-1,
@@ -451,7 +457,7 @@ table.composition tbody tr td:last-child {
     }
     p {
         font-weight: 300;
-        text-align: left;
+        text-align: justify;
     }
     /* MAIN PAGE */
     .main-page h2 {
