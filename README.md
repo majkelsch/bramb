@@ -18,11 +18,11 @@ Jak začít:
   - 
 
 Troubleshooting:
-1. Všude jsou errory a vytvořila se nová složka '.vscode' v repozitáři
+1. Všude jsou errory a vytvořila se nová složka '.DS_Store' v repozitáři
   - Zaprvé jestli to pushnete tak vás zabim
   - Řešení:
     - Vypnu všechny apky kde je otevřený kód
-    - Pokud využíváš VSCode vymaž složku '.vscode'
+    - Pokud využíváš VSCode vymaž složku '.DS_Store'
     - Hotovo, pokud je ještě někde problém napiš
 
 2. Otevře se něco jiného než stánka a je tu kód
