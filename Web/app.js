@@ -1,9 +1,9 @@
-/* Open when someone clicks on the span element */
+/* Otevření menu */
 function openMenu() {
-    document.getElementById("myMenu").style.width = "100%";
+    document.getElementById("menu").style.width = "100%";
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
+/* Zavření menu */
 function closeMenu() {
-    document.getElementById("myMenu").style.width = "0%";
+    document.getElementById("menu").style.width = "0%";
 }

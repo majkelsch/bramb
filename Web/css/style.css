@@ -10,6 +10,21 @@ body {
     animation-fill-mode: forwards;
 }
 
+form.login.box {
+    background-color: #f5f5f5d5;
+    padding: 5%;
+    margin: 15px auto 15px auto;
+    border-radius: 10px;
+    width: 50%;
+}
+
+form.login.box input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
 * {
     box-sizing: border-box;
     overflow: auto;
@@ -25,6 +40,26 @@ body {
 .container-fluid {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.carousel-slides {
+    display: none;
+}
+
+.fadeBoth {
+    animation-name: fadeOutAnimation;
+    animation-name: fadeInAnimation;
+    animation-duration: .5s;
+  }
+
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .row {
@@ -197,7 +232,7 @@ a {
 
 .highlight {
     background-color: #fff;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
     position: relative;
     top: 60vh;
     height: 100%;
@@ -292,7 +327,8 @@ span {
 }
 
 .mp-illustration img {
-    max-width: 60%;
+    max-width: 60vw;
+    max-height: 50vh;
     display: block;
     margin: 40px auto;
 }
@@ -339,7 +375,6 @@ button.primary:hover {
         padding: 15px;
     }
 }
-
 
 /* PRODUCT PAGES */
 
@@ -394,7 +429,7 @@ table.composition tbody tr td:last-child {
 
 .user-rating {
     background-color: #f1f1f1;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 2px 2px #0000001f;
     margin: 10px;
 }
@@ -402,7 +437,7 @@ table.composition tbody tr td:last-child {
 .user-rating.lvl-2 {
     margin: 10px 10px 10px 50px;
     background-color: #f1f1f1;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 2px 2px #0000001f;
 }
 
@@ -497,5 +532,5 @@ table.composition tbody tr td:last-child {
     .user-rating .user-msg {
         width: 80%;
         float: left;
-    }
+    }  
 }

@@ -15,6 +15,7 @@
 
     <body>
         <header>
+            
             <div class="nav-menu">
                 <div class="logo">
                     <h1><a href="index.html">CHIPSY</a></h1>
@@ -24,7 +25,7 @@
                 </div>
             </div>
 
-            <div id="myMenu" class="menu-overlay">
+            <div id="menu" class="menu-overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
                 <div class="menu-content">
                     <h1>MENU</h1>
@@ -35,13 +36,14 @@
                     <a href="index.html">DOMŮ</a>
                     <a href="html/o-cipsech.html">O ČIPSECH</a>
                     <a href="#">O NÁS</a>
+                    <a href="log-in.html">PŘIHLÁŠENÍ A REGISTRACE</a> 
                 </div>
             </div>
         </header>
 
         <div class="main-page">
             <div class="container background">
-                <div class="row">
+                <div class="row carouselSlide fadeBoth">
                     <h2>Náš tip dne</h2>
                     <div>
                         <div class="mp-description">
@@ -74,6 +76,39 @@
                         <button class="primary">Chci vědět více</button>
                     </a>
                 </div>
+                <div class="row carouselSlide fadeBoth">
+                    <h2>Náš tip dne</h2>
+                    <div>
+                        <div class="mp-description">
+                            <h3>Lay's Salted</h3>
+                            <p>Smažené bramborové lupínky, solené</p>
+                            <br />
+                            <h4>Hodnocení redakce</h4>
+                            <table class="mp-rating">
+                                <tbody>
+                                    <tr>
+                                        <td>Chuť</td>
+                                        <td class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plnost balení</td>
+                                        <td class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cena</td>
+                                        <td class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mp-illustration">
+                            <img src="https://laysky-cz.wspprod.com/images/pages/products/core/highquality/salted.png" />
+                        </div>
+                    </div>
+                    <a href="html/lays/lays-fromage.html">
+                        <button class="primary">Chci vědět více</button>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="container" id="#o-chipsech">
@@ -81,7 +116,7 @@
                 <h1>O CHIPSECH</h1>
             </div>
             <div>
-                <p>Chips jsou tenké plátky brambor nebo jiných druhů zeleniny, které jsou někdy opečené nebo smažené do křupava. Často jsou osolené a ochucené, a jsou oblíbeným pochoutkovým jídlem po celém světě.</p>
+                <p>Chipsy jsou tenké plátky brambor nebo jiných druhů zeleniny, které jsou někdy opečené nebo smažené do křupava. Často jsou osolené a ochucené, a jsou oblíbeným pochoutkovým jídlem po celém světě.</p>
                 <p>
                     Existuje mnoho různých druhů chipsů, včetně <em>bramborových chipsů</em>, <em>kukuřičných chipsů</em>, <em>tortilla chipsů</em> a <em>pita chipsů</em>, mezi ostatními. Chipsy mohou být vyrobeny z řady různých surovin,
                     včetně <strong>brambor</strong>, <strong>kukuřice</strong>, <strong>rýže</strong>, <strong>pšenice</strong> a dalších obilovin. Mohou být ochucené širokou škálou koření, jako je <em>sůl</em>, <em>ocet</em>,
@@ -93,5 +128,6 @@
                 </p>
             </div>
         </div>
+        <script src="carousel.js"></script>
     </body>
 </html>
