@@ -14,3 +14,11 @@ Jak začít:
   - Hotovo, gratuluji
 
 Troubleshooting:
+
+
+Rozdělení:
+  - Michal
+    - Vše
+  - Aleš
+  - Any
+  - Martin
