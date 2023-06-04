@@ -34,5 +34,6 @@ Rozdělení:
   - Michal
     - Vše
   - Aleš
+    - Grafické návrhy (prozatimní)
   - Any
   - Martin
