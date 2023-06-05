@@ -1,6 +1,81 @@
 # bramb
 Projekt Chipsy
 
+Jak pracovat s Joomla?
+1. Přihlásím se do systému na adrese http://chipstips.cz/administrator/index.php svými přihlašovacími údaji.
+
+Jak vytvořit stránku?
+1. Vlevo je postranní menu, kliknu na záložku Obsah
+2. Rozbalí se nabídka, kliknu na Články
+3. Následně vlevo nahoře je tlačítko Nový, kliknu na něj
+4. Ukáže se nové okno, vyplním Titulek (podle názvu stránky)
+5. Dole je modré tlačítko Přepnout editor
+6. Teď můžete do textového pole psát HTML nebo ho vložit z jiného programu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Jak začít:
 1. Jak se podívat na web?
   - Otevři soubor 'index.html' JEN 'index.html' (Jinak us '.js nebo .css' se Vám to posere a já vás zabim), nebo teda otevírejte JEN soubory '.html' pls
