@@ -109,6 +109,7 @@ Rozdělení:
   - Michal
     - Vše
   - Aleš
-    - Grafické návrhy (prozatimní)
+    - Grafické návrhy (občasné, zejména design postav)
+    - komentování kódu
   - Any
   - Martin
