@@ -1,0 +1,74 @@
+/*Mobile Stuff*/
+@media only screen and (min-width: 720px) {
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 2%;
+    }
+
+    .menu p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .mp-background {
+        background-image: url("http://chipstips.cz/templates/chipstips/images/CP_TiledBCG.png");
+        height: 100vh;
+    }
+
+    .container {
+        background-color: white;
+        width: 90%;
+    }
+
+    .main-text {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .typewriter {
+        min-height: 69px;
+    }
+
+    .content,
+    .content h2 {
+        text-align: center;
+    }
+}
+
+/*Desktop Stuff*/
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+}
+
+.menu p {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.mp-background {
+    background-image: url("http://chipstips.cz/templates/chipstips/images/CP_TiledBCG.png");
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+}
+
+.main-text {
+    text-align: center;
+    font-size: 60px;
+}
+
+.typewriter {
+    min-height: 69px;
+}
+
+.content,
+.content h2 {
+    text-align: center;
+}

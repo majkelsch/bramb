@@ -1,0 +1,502 @@
+/* Version 0.0.1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: 'Play', sans-serif!important;
+    background-color: #fff;
+    font-size: 16px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.container {
+    margin: 0 auto 20px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.row {
+    padding: 30px;
+}
+
+p {
+    font-weight: 300;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-12,
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    float: left;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #d50000;
+}
+
+header * {
+    overflow: hidden;
+}
+
+header .nav-menu {
+    margin: 0 auto 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+}
+
+header .logo {
+    display: block;
+    float: left;
+}
+
+header .nav-menu-btn {
+    display: block;
+    float: right;
+}
+
+header .nav-menu-btn h2 span.openbtn {
+    color: #000;
+    transition: .3s;
+}
+
+header .nav-menu-btn h2 span.openbtn:hover {
+    color: #e20613;
+}
+
+a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.animated a:hover {
+    color: #d50000;
+}
+
+.animated a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    background-color: #d50000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.animated a:hover::before {
+    transform: scaleX(1);
+}
+
+.main-page {
+    background-image: url(http://chipstips.cz/images/chipstips/background-mp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.highlight {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    top: 60vh;
+    height: 100%;
+}
+
+.menu-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+
+.menu-content {
+    overflow: hidden;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: #333;
+    transform: scale(1.1);
+}
+
+.overlay-menu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay-menu .openbtn {
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    font-size: 24px;
+}
+
+span {
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.main-page .container.background {
+    background-color: #f5f5f5cc;
+    border-radius: 10px;
+    margin: 50px auto 50px auto;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-page h2 {
+    text-align: center;
+}
+
+.main-page .mp-description,
+.mp-illustration {
+    text-align: center;
+}
+
+.mp-illustration img {
+    max-width: 60%;
+    display: block;
+    margin: 40px auto;
+}
+
+table.mp-rating tbody tr td {
+    text-align: left;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+table.mp-rating tbody tr td.stars {
+    color: #029bdd;
+    font-size: 20px;
+}
+
+table.mp-rating {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.primary {
+    background-color: #e20613;
+    color: #fff;
+    padding: .6rem 2rem;
+    display: block;
+    margin: 50px auto 0 auto;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button.primary:hover {
+    background-color: #F5F5F5;
+    color: #e20613;
+}
+
+@media only screen and (max-width: 360px) {
+    .row {
+        padding: 15px;
+    }
+}
+
+
+/* PRODUCT PAGES */
+
+.col-6 img {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+table.composition {
+    width: 80%;
+    margin: 50px auto 50px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #f5f5f5cc;
+}
+
+table.composition tbody tr th,
+table.composition tbody tr td {
+    width: 20%;
+    padding: 14px 20px 14px 20px;
+    margin: 0;
+}
+
+table.composition tbody tr:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+
+table.composition tbody tr th {
+    text-align: left;
+}
+
+table.composition tbody tr td:last-child {
+    text-align: right;
+}
+
+.user-rating img {
+    max-width: 50px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.user-rating .pfp {
+    overflow: hidden;
+    width: 100%;
+}
+
+.user-rating .user-msg {
+    width: 100%;
+}
+
+.user-rating {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 2px 2px #0000001f;
+    margin: 10px;
+}
+
+.user-rating.lvl-2 {
+    margin: 10px 10px 10px 50px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 2px 2px #0000001f;
+}
+
+
+/* RESPONSIVE DESKTOP (700px+) */
+
+@media only screen and (min-width: 700px) {
+    /* BASIC */
+    .col-1 {
+        width: 8.33333333%;
+    }
+    .col-2 {
+        width: 16.66666667%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33333333%;
+    }
+    .col-5 {
+        width: 41.66666667%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33333333%;
+    }
+    .col-8 {
+        width: 66.66666667%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33333333%;
+    }
+    .col-11 {
+        width: 91.66666667%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight: 600;
+        text-align: left;
+    }
+    p {
+        font-weight: 300;
+        text-align: left;
+    }
+    /* MAIN PAGE */
+    .main-page h2 {
+        text-align: left;
+    }
+    .main-page .mp-description,
+    .mp-illustration {
+        text-align: left;
+        width: 50%;
+        float: left;
+    }
+    .mp-illustration img {
+        max-width: 60%;
+        display: block;
+        margin: auto;
+    }
+    /* PRODUCT TABLE */
+    table.mp-rating {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    table.mp-rating tbody tr td {
+        padding-right: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    .menu-content h1,
+    .menu-content p {
+        text-align: center;
+    }
+    /* USER RATING */
+    .user-rating .pfp {
+        overflow: hidden;
+        float: left;
+        width: 20%;
+    }
+    .user-rating .user-msg {
+        width: 80%;
+        float: left;
+    }
+}
+
+.carouselSlide {
+  display: none;
+}
