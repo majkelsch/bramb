@@ -1,4 +1,5 @@
-# bramb
+# bramb - EoL
+- Webové rozhraní již nebude udržováno, všechny důležité soubory a kódy jsou ve složce 'v2'
 Projekt Chipsy
 
 Jak pracovat s Joomla?
